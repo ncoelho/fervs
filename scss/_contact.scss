@@ -1,0 +1,46 @@
+// Styling for the download section
+section.contact {
+    text-align: center;
+    padding: 96px 0;
+    h2 {
+        font-size: 48px;
+        margin-top: 0px;
+        margin-bottom: 24px;
+        font-weight: 600;
+        color: $theme-primary;
+    }
+    p {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+    .people {
+        margin-top: 96px;
+        img {
+            width: 100px;
+        }
+        h3 {
+            font-weight: 600;
+            font-size: 24px;
+            margin-top: 24px;
+        }
+        a {
+            color: $theme-primary;
+        }
+        a:hover {
+            color: $theme-primary;
+        }
+    }
+    .reach {
+        h3 {
+            font-weight: 600;
+            font-size: 24px;
+            margin-top: 96px;
+        }
+        img {
+            width: 168px;
+        }
+        p {
+            margin-top: 8px;
+        }
+    }
+}
