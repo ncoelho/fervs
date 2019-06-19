@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://max-width.com/sitemap.xml
