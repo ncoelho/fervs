@@ -4,54 +4,258 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, maximum-scale=1.0, initial-scale=1.0">
-    <meta name="description" content="Professional UI kits for Designers, supporting iOS and android, mobile and sketch app and figma, react and vuejs">
-    <meta name="author" content="max-width.com">
+    <meta name="description" content="mobile design system and UI kit, supporting iOS and android, mobile and sketch app and figma, react and vuejs">
+    <meta name="author" content="fervs.com">
 
-    <title>max-width - Professional UI kits for Designers</title>
+    <title>fervs - Mobile Design System and UI kit for sketch</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="ven/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/ven/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link rel="stylesheet" href="ven/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/ven/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom styles for this template -->
-    <link href="css/new-age.css" rel="stylesheet">
+    <link href="/css/new-age.css" rel="stylesheet">
 
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- og:tags -->
     <meta property="og:image" content="https://bluewallet.io/img/bluewallet-big.png" />
     <meta name="twitter:image" content="https://bluewallet.io/img/bluewallet-big.png" />
 
-    <meta property="og:site_name" content="max-width - Professional UI kits for Designers" />
+    <meta property="og:site_name" content="fervs - Mobile Design System and UI kit for sketch" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Professional UI kits for Designers, supporting iOS and android, mobile and sketch app and figma, react and vuejs" />
-    <meta property="og:url" content="https://max-width.com" />
-    <meta property="og:title" content="max-width - Professional UI kits for Designers" />
+    <meta property="og:description" content="mobile design system and UI kit, supporting iOS and android, mobile and sketch app and figma, react and vuejs" />
+    <meta property="og:url" content="https://fervs.com" />
+    <meta property="og:title" content="fervs - Mobile Design System and UI kit for sketch" />
     <meta property="fb:app_id" content="254973701957449" />
     <meta property="fb:pages" content="499685187154976" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="max-width - Professional UI kits for Designers" />
-    <meta name="twitter:description" content="Professional UI kits for Designers, supporting iOS and android, mobile and sketch app and figma, react and vuejs" />
-    <meta name="twitter:url" content="https://bluewallet.io/" />
-   <style> .gumroad-follow-form-embed { zoom: 1; } .gumroad-follow-form-embed:before, .gumroad-follow-form-embed:after { display: table; line-height: 0; content: ""; } .gumroad-follow-form-embed:after { clear: both; } .gumroad-follow-form-embed * { margin: 0; border: 0; padding: 0; outline: 0; box-sizing: border-box !important; float: left !important; } .gumroad-follow-form-embed input { border-radius: 4px; border-top-right-radius: 0; border-bottom-right-radius: 0; font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; background: #fff; border: 1px solid #ddd; border-right: 0; color: #aaa; padding: 10px; box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02); background-position: top right; background-repeat: no-repeat; text-rendering: optimizeLegibility; font-smoothing: antialiased; -webkit-appearance: none; -moz-appearance: caret; width: 65% !important; height: 40px !important; } .gumroad-follow-form-embed button { border-radius: 4px; border-top-left-radius: 0; border-bottom-left-radius: 0; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12); -webkit-transition: all .05s ease-in-out; transition: all .05s ease-in-out; display: inline-block; padding: 11px 15px 12px; cursor: pointer; color: #fff; font-size: 15px; line-height: 100%; font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; background: #36a9ae; border: 1px solid #111111; filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#5ccfd4, endColorstr=#329ca1, GradientType=0)"; background: -webkit-linear-gradient(#111111, #111111); background: linear-gradient(to bottom, #111111, #111111); height: 40px !important; width: 35% !important; } </style>
+    <meta name="twitter:title" content="fervs - Mobile Design System and UI kit for sketch" />
+    <meta name="twitter:description" content="mobile design system and UI kit, supporting iOS and android, mobile and sketch app and figma, react and vuejs" />
+    <meta name="twitter:url" content="https://fervs.com" />
+
   </head>
 
-  <body id="page-top">
-    <!-- Header section -->
-    <section class="masthead">
+  <body id="page-top" class="fervs">
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
       <div class="container">
-        <div class="row" style="height: 100vh">
-          <div class="col-lg-12 my-auto" style="text-align:center">
-            <img src="img/logo.svg" alt="max-width - Professional UI kits for Designers">
-            <div class="col-lg-4 mx-auto" style="margin-top: 90px">
-              <form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post"> <input name="seller_id" type="hidden" value="406345381055"> <input name="email" placeholder="Your email address" type="email"> <button data-custom-highlight-color="" type="submit">Follow</button> </form>
+        <a href="/">
+          <img src="/img/fervs-logo.svg" alt="fervs - Mobile Design System and UI kit for sketch">
+        </a>
+      </div>
+    </nav>
+
+ 
+  <section class="masthead">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mobile">
+            <h1>A mobile Design System to power your next mobile app</h1>
+            <p>Speed up your design process with <strong>fervs</strong>, ideal for Designers, Developers and Researchers</p>
+
+            <a class="btn btn-lg btn-primary" href="#download" data-gumroad-single-product="true">Download now</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 mobile compatible">
+            <p class="gray">Made for</p>
+            <ul class="list-inline">
+              <li class="list-inline-item y-auto"><img src="/img/sketch.svg" alt="sketch"> Sketch</li>
+              <li class="list-inline-item y-auto"><img src="/img/ios.svg" alt="ios"> iOS</li>
+            </ul>
+          </div>
+        </div>
+            
+       
+    </div>
+  </section>
+  <section class="components">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-5 my-auto mobile">
+            <img src="img/components.png">
+          </div>
+          <div class="col-lg-7 my-auto">
+            <h2>Validate, test and  present your ideas</h2>
+            <p>All elements are designed with a component-based approach. You can combine, reuse and easily change them. All available in a single style-guide.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="custom">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-5 my-auto">
+            <h2>3 base themes</h2>
+            <ul>
+              <li>Light</li>
+              <li>Lights Off</li>
+              <li>Dime</li>
+            </ul>
+            <p>All templates come styled in 3 themes by default so you can easily adapt them to your brand reality.</p>
+          </div>
+          <div class="col-lg-7 my-auto comp text-right">
+            <img src="img/custom.png">
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="lightdark">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12 my-auto comp text-center">
+            <h2>100+ templates</h2>
+            <p>Pixel-perfect designed templates and layouts ready to use for your next project.</p>
+          </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-12 my-auto comp text-center">
+            <img src="/img/100templates.png" alt="preview templates">
+          </div>
+      </div>
+    </div>
+         
+  </section>
+  <section class="templates">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-7 my-auto">
+            <h2>Extra themes</h2>
+            <a href="#download" class="btn btn-lg btn-light"><img src="/img/travel.svg" align="travel theme">Travel theme</a>
+            <p>Includes an extra travel theme for your travel app. With elements like calendar, booking components and templates.</p>
+          </div>
+          <div class="col-lg-5 my-auto comp text-center">
+            <img class="travelimg" src="img/traveltheme.png">
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="buyit" id="download">
+    <div class="container">
+      <h2 class="text-center my-auto">Download</h2>
+        <div class="row">
+          <div class="col-lg-4 my-auto">
+            <div class="pricetable text-center">
+              <h4>Intro</h4>
+              <ul>
+                <li>30+ templates</li>
+                <li>250+ components</li>
+                <li>Light theme</li>
+                <li class="no">Lights Off theme</li>
+                <li class="no">Dime theme</li>
+                <li class="no">Travel theme</li>
+                <li class="no">Styleguide</li>
+              </ul>
+              <h3>1 user</h3>
+              <span>free</span>
+              <a class="btn btn-lg btn-block btn-outline-primary" href="https://gum.co/wonderland?wanted=true" data-gumroad-single-product="true">Download</a>
             </div>
           </div>
+          <div class="col-lg-4 my-auto">
+            <div class="pricetable text-center">
+              <h4>Single</h4>
+              <ul>
+                <li>100+ templates</li>
+                <li>250+ components</li>
+                <li>Light theme</li>
+                <li>Lights Off theme</li>
+                <li>Dime theme</li>
+                <li>Travel theme</li>
+                <li>Styleguide</li>
+              </ul>
+              <h3>1 user</h3>
+              <span>$ 56</span>
+              <a class="btn btn-primary btn-lg btn-block" href="https://gum.co/wonderland2?wanted=true" data-gumroad-single-product="true">Buy now</a>
+            </div>
+          </div>
+          <div class="col-lg-4 my-auto">
+            <div class="pricetable text-center">
+              <h4>Pro</h4>
+              <ul>
+                <li>100+ templates</li>
+                <li>250+ components</li>
+                <li>Light theme</li>
+                <li>Lights Off theme</li>
+                <li>Dime theme</li>
+                <li>Travel theme</li>
+                <li>Styleguide</li>
+              </ul>
+              <h3>Unlimited users</h3>
+              <span>$ 298</span>
+              <a class="btn btn-primary btn-lg btn-block" href="https://gum.co/wonderland3?wanted=true" data-gumroad-single-product="true">Buy now</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+  </section>
+  <section class="faq">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-12 my-auto">
+            <h2 class="text-center">F.A.Q.</h2>
+            <h3><strong>Updates</strong></h3>
+            <p>You will get automatic email notifications when updates are released. You will also have access to the product page to download latest versions any time.</p>
+            <h3><strong>Support</strong></h3>
+            <p>If you need any help or advice you can always contact us by email. We are happy to help.</p>
+            <h3><strong>Why fervs?</strong></h3>
+            <p>fervs is a young and new framework, but already started with solid fundaments and high standards. From here it will only get better.</p>
+          </div>
+        </div>
+      </div>
+    
+  </section>
+
+  </div> <!-- page div -->
+
+  <footer>
+      <div class="container">
+        <hr>
+        <div class="row">
+        <div class="col-lg-6 text-left">
+            <span>&copy; fervs.com All Rights Reserved.</span>
+        </div>
+        <div class="col-lg-6 text-right">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="mailto:hello@fervs.com">
+                hello@fervs.com</a></li>
+                <li class="list-inline-item"><a href="https://instagram/maxwidthcom" target="_blank">Instagram</a></li>
+            </ul>
+        </div> 
         </div>   
       </div>
-    </section>
-    
+  </footer>
+    <!-- Gumroad JavaScript -->
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="/ven/jquery/jquery.min.js"></script>
+    <script src="/ven/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="/ven/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="/js/new-age.min.js"></script>
+    <script type="text/javascript">
+      $(".btn").click(function(e) {
+    e.preventDefault();
+    var aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
+});
+    </script>
     
   </body>
 

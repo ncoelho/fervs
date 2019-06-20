@@ -7,7 +7,7 @@
 #mainNav {
     border-color: fade-out($gray-darker, .95);
     background-color: white;
-    padding: 32px 0 10px 0;
+    padding: 36px 0 36px 0;
     .navbar-brand {
         color: $theme-primary;
         @include heading-font;
