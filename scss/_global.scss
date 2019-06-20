@@ -261,24 +261,26 @@ section {
         }
     }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
   .first h2 {
     font-size: 22px;
   }
 }
-.come-in {
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards;
-}
-.come-in:nth-child(odd) {
-  animation-duration: 1.5s;
-}
-.already-visible {
-  transform: translateY(0);
-  animation: none;
-}
+@media (min-width: 992px) {
+  .come-in {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+  }
+  .come-in:nth-child(odd) {
+    animation-duration: 1.5s;
+  }
+  .already-visible {
+    transform: translateY(0);
+    animation: none;
+  }
 
-@keyframes come-in {
-  to { transform: translateY(0); }
+  @keyframes come-in {
+    to { transform: translateY(0); }
+  }
 }
