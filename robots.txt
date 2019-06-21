@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://max-width.com/sitemap.xml
+Sitemap: https://fervs.com/sitemap.xml
