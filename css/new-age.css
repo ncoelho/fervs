@@ -191,55 +191,73 @@ section h2 {
   font-size: 20px !important;
 }
 
-@media (min-width: 992px) {
-  .components, .custom, .templates, .buyit, .faq {
-    height: 100vh;
-  }
-}
-
-@media (max-width: 991px) {
-  .components, .custom, .templates, .buyit, .faq {
-    padding: 64px 0;
-  }
-  .components .mobile, .custom .mobile, .templates .mobile, .buyit .mobile, .faq .mobile {
-    order: 2;
-  }
-  .components div, .custom div, .templates div, .buyit div, .faq div {
-    text-align: center;
-  }
-}
-
-.components h2, .custom h2, .templates h2, .buyit h2, .faq h2 {
+.faq h2 {
   font-weight: bold;
   margin-bottom: 52px;
 }
 
 @media (min-width: 992px) {
-  .components h2, .custom h2, .templates h2, .buyit h2, .faq h2 {
+  .faq h2 {
     font-size: 66px;
   }
 }
 
 @media (max-width: 991px) {
-  .components h2, .custom h2, .templates h2, .buyit h2, .faq h2 {
+  .faq h2 {
     text-align: center;
     margin-bottom: 40px;
   }
 }
 
-.components p, .custom p, .templates p, .buyit p, .faq p {
+@media (min-width: 992px) {
+  .components, .custom, .templates, .buyit {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 991px) {
+  .components, .custom, .templates, .buyit {
+    padding: 64px 0;
+  }
+  .components .mobile, .custom .mobile, .templates .mobile, .buyit .mobile {
+    order: 2;
+  }
+  .components div, .custom div, .templates div, .buyit div {
+    text-align: center;
+  }
+}
+
+.components h2, .custom h2, .templates h2, .buyit h2 {
+  font-weight: bold;
+  margin-bottom: 52px;
+}
+
+@media (min-width: 992px) {
+  .components h2, .custom h2, .templates h2, .buyit h2 {
+    font-size: 66px;
+  }
+}
+
+@media (max-width: 991px) {
+  .components h2, .custom h2, .templates h2, .buyit h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.components p, .custom p, .templates p, .buyit p {
   font-size: 24px;
 }
 
 @media (max-width: 991px) {
-  .components p, .custom p, .templates p, .buyit p, .faq p {
+  .components p, .custom p, .templates p, .buyit p {
     text-align: left !important;
     margin-bottom: 40px;
   }
 }
 
 @media (min-width: 992px) {
-  .components .row, .custom .row, .templates .row, .buyit .row, .faq .row {
+  .components .row, .custom .row, .templates .row, .buyit .row {
     height: -moz-available;
     /* WebKit-based browsers will ignore this. */
     height: -webkit-fill-available;
@@ -248,65 +266,65 @@ section h2 {
   }
 }
 
-.components .comp, .custom .comp, .templates .comp, .buyit .comp, .faq .comp {
+.components .comp, .custom .comp, .templates .comp, .buyit .comp {
   height: 100%;
 }
 
-.buyit .pricetable {
+.buyit .pricetable, .follow .pricetable {
   padding: 24px;
   border-radius: 8px;
   box-shadow: 0 1px 46px 11px rgba(13, 45, 75, 0.1);
   transition: all 0.5s ease;
 }
 
-.buyit .pricetable:hover {
+.buyit .pricetable:hover, .follow .pricetable:hover {
   box-shadow: 0 1px 20px 11px rgba(13, 45, 75, 0.1);
   transform: scale(0.96);
 }
 
-.buyit .pricetable small {
+.buyit .pricetable small, .follow .pricetable small {
   font-size: 17px;
 }
 
-.buyit .pricetable h4 {
+.buyit .pricetable h4, .follow .pricetable h4 {
   font-weight: bold;
   font-size: 22px;
 }
 
-.buyit .pricetable ul {
+.buyit .pricetable ul, .follow .pricetable ul {
   text-align: left;
   list-style: none;
 }
 
-.buyit .pricetable ul li:before {
+.buyit .pricetable ul li:before, .follow .pricetable ul li:before {
   content: '✔ ';
   color: #0070FF;
 }
 
-.buyit .pricetable ul li.no:before {
+.buyit .pricetable ul li.no:before, .follow .pricetable ul li.no:before {
   content: '✖ ';
   color: #777777;
 }
 
-.buyit .pricetable h3 {
+.buyit .pricetable h3, .follow .pricetable h3 {
   font-weight: bold;
   font-size: 30px;
   color: #0070FF;
   margin: 24px 0 0 0;
 }
 
-.buyit .pricetable h4 {
+.buyit .pricetable h4, .follow .pricetable h4 {
   margin-bottom: 24px;
 }
 
-.buyit .pricetable span {
+.buyit .pricetable span, .follow .pricetable span {
   font-weight: bold;
   font-size: 30px;
   margin-bottom: 32px;
   display: block;
 }
 
-.buyit .pricetable .btn {
+.buyit .pricetable .btn, .follow .pricetable .btn {
   padding: 16px 24px 16px 24px;
   border-radius: 4px;
   font-weight: bold;
@@ -316,7 +334,7 @@ section h2 {
 }
 
 @media (max-width: 991px) {
-  .buyit .pricetable {
+  .buyit .pricetable, .follow .pricetable {
     margin: 24px;
   }
 }
@@ -344,6 +362,70 @@ section h2 {
       transform: translateY(0);
     }
   }
+}
+
+.gumroad-follow-form-embed {
+  zoom: 1;
+}
+
+.gumroad-follow-form-embed:before, .gumroad-follow-form-embed:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.gumroad-follow-form-embed:after {
+  clear: both;
+}
+
+.gumroad-follow-form-embed * {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box !important;
+  float: left !important;
+}
+
+.gumroad-follow-form-embed input {
+  border-radius: 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  line-height: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-right: 0;
+  color: #aaa;
+  padding: 10px;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02);
+  background-position: top right;
+  background-repeat: no-repeat;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  -webkit-appearance: none;
+  -moz-appearance: caret;
+  width: 65% !important;
+  height: 52px !important;
+  font-size: 18px;
+}
+
+.gumroad-follow-form-embed button {
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+  -webkit-transition: all .05s ease-in-out;
+  transition: all .05s ease-in-out;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  line-height: 100%;
+  background: #006fff;
+  border: 1px solid #0064e6;
+  background: #0070FF;
+  height: 52px !important;
+  width: 35% !important;
 }
 
 @media (max-width: 991px) {
