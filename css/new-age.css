@@ -210,12 +210,12 @@ section h2 {
   padding: 30px 0 60px 0;
   font-weight: bold;
   margin-bottom: 52px;
-  margin-top: 90px;
 }
 
 @media (min-width: 992px) {
   .faq h2 {
     font-size: 66px;
+    margin-top: 90px;
   }
 }
 
@@ -320,7 +320,12 @@ section h2 {
 
 .buyit .pricetable:hover, .follow .pricetable:hover {
   box-shadow: 0 1px 20px 11px rgba(13, 45, 75, 0.1);
-  transform: scale(0.96);
+}
+
+@media (min-width: 992px) {
+  .buyit .pricetable:hover, .follow .pricetable:hover {
+    transform: scale(0.96);
+  }
 }
 
 .buyit .pricetable small, .follow .pricetable small {
