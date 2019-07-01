@@ -83,24 +83,15 @@ section {
   background: $theme-primary;
   color: #fff;
   position: relative;
-  @media (min-width: 992px) {
-    .back {
-      background: url(../img/lightsback.png) no-repeat bottom;
-    }
-  }
   p {
     margin-bottom: 0px;
   }
   &.dime {
     background: #30485B;
-  @media (min-width: 992px) {
-    .back {
-      background: url(../img/lightsback.png) no-repeat bottom;
-    }
-  }
+    position: relative;
   }
   @media (min-width: 992px) {
-        height: 100vh;
+        
     }
     img {
         max-width: 880px;
@@ -124,55 +115,36 @@ section {
 
 .video {
   padding: 80px 0;
+  z-index: 9999;
+  background: #fff;
     .macbook {
-      background: url(../img/macbook.png) no-repeat center;
-      background-size: 1200px;
-      width: 1200px;
-      height: 750px;
-      transition: all .4s ease-in-out;
-      margin: 0 auto;
-      @media (max-width: 991px) {
-        background-size: 900px;
-        width: 900px;
-        height: 600px;
-        margin: 0 auto;
-      }
-      @media (max-width: 767px) {
-        background-size: 600px;
-        width: 600px;
-        height: 500px;
-        margin: 0 auto;
-      }
-      @media (max-width: 575px) {
-        background-size: 360px;
-        width: 360px;
-        height: 300px;
-        margin: 0 auto;
+        .book {
+        transition: all .4s ease-in-out;
+        position: relative;
+        }
+        &:hover .book  {
+            -webkit-filter: blur(3.5px); /* Safari 6.0 - 9.0 */
+            filter: blur(3.5px);
+        }
+      
+    }
+    .macbook {
+      position: relative;
+      .play {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left: 50%;
+        margin-left: -50px;
+        top: 50%;
+        margin-top: -50px;
+        opacity: .0;
+        transition: all .4s ease-in-out;
       }
       &:hover {
-          background: url(../img/macbookhover.png) no-repeat center;
-          background-size: 1200px;
-          width: 1200px;
-          height: 750px;
-          margin: 0 auto;
-          @media (max-width: 991px) {
-            background-size: 900px;
-            width: 900px;
-            height: 600px;
-            margin: 0 auto;
-          }
-          @media (max-width: 767px) {
-            background-size: 600px;
-            width: 600px;
-            height: 500px;
-            margin: 0 auto;
-          }
-          @media (max-width: 575px) {
-            background-size: 360px;
-            width: 360px;
-            height: 300px;
-            margin: 0 auto;
-          }
+        .play {
+          opacity: 1;
+        }
       }
     }
     h2 {
@@ -227,15 +199,19 @@ section {
 .wireframes {
   background: $main-color;
   color: #fff;
-  .back {
-    background: url(../img/wire-back.png) no-repeat right;
+  @media (min-width: 992px) {
+    .back {
+      background: url(../img/wire-back.png) no-repeat right;
+    }
   }
   h2 {
     margin-bottom: 6px !important;
   }
-  p {
-    margin: 56px 0;
-  }
+  @media (max-width: 991px) {
+    p {
+      margin: 56px 0;
+    }
+}
 }
 .components, .lightsoff, .buyit, .wireframes {
     @media (max-width: 991px) {
