@@ -92,30 +92,13 @@ section h2 {
   position: relative;
 }
 
-@media (min-width: 992px) {
-  .lightsoff .back {
-    background: url(../img/lightsback.png) no-repeat bottom;
-  }
-}
-
 .lightsoff p {
   margin-bottom: 0px;
 }
 
 .lightsoff.dime {
   background: #30485B;
-}
-
-@media (min-width: 992px) {
-  .lightsoff.dime .back {
-    background: url(../img/lightsback.png) no-repeat bottom;
-  }
-}
-
-@media (min-width: 992px) {
-  .lightsoff {
-    height: 100vh;
-  }
+  position: relative;
 }
 
 .lightsoff img {
@@ -142,77 +125,39 @@ section h2 {
 
 .video {
   padding: 80px 0;
+  z-index: 9999;
+  background: #fff;
+}
+
+.video .macbook .book {
+  transition: all .4s ease-in-out;
+  position: relative;
+}
+
+.video .macbook:hover .book {
+  -webkit-filter: blur(3.5px);
+  /* Safari 6.0 - 9.0 */
+  filter: blur(3.5px);
 }
 
 .video .macbook {
-  background: url(../img/macbook.png) no-repeat center;
-  background-size: 1200px;
-  width: 1200px;
-  height: 750px;
+  position: relative;
+}
+
+.video .macbook .play {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  top: 50%;
+  margin-top: -50px;
+  opacity: .0;
   transition: all .4s ease-in-out;
-  margin: 0 auto;
 }
 
-@media (max-width: 991px) {
-  .video .macbook {
-    background-size: 900px;
-    width: 900px;
-    height: 600px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 767px) {
-  .video .macbook {
-    background-size: 600px;
-    width: 600px;
-    height: 500px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 575px) {
-  .video .macbook {
-    background-size: 360px;
-    width: 360px;
-    height: 300px;
-    margin: 0 auto;
-  }
-}
-
-.video .macbook:hover {
-  background: url(../img/macbookhover.png) no-repeat center;
-  background-size: 1200px;
-  width: 1200px;
-  height: 750px;
-  margin: 0 auto;
-}
-
-@media (max-width: 991px) {
-  .video .macbook:hover {
-    background-size: 900px;
-    width: 900px;
-    height: 600px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 767px) {
-  .video .macbook:hover {
-    background-size: 600px;
-    width: 600px;
-    height: 500px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 575px) {
-  .video .macbook:hover {
-    background-size: 360px;
-    width: 360px;
-    height: 300px;
-    margin: 0 auto;
-  }
+.video .macbook:hover .play {
+  opacity: 1;
 }
 
 .video h2 {
@@ -286,16 +231,20 @@ section h2 {
   color: #fff;
 }
 
-.wireframes .back {
-  background: url(../img/wire-back.png) no-repeat right;
+@media (min-width: 992px) {
+  .wireframes .back {
+    background: url(../img/wire-back.png) no-repeat right;
+  }
 }
 
 .wireframes h2 {
   margin-bottom: 6px !important;
 }
 
-.wireframes p {
-  margin: 56px 0;
+@media (max-width: 991px) {
+  .wireframes p {
+    margin: 56px 0;
+  }
 }
 
 @media (max-width: 991px) {
