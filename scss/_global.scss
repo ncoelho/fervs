@@ -79,19 +79,34 @@ section {
     max-width: 360px;
     max-height: 670px;
 }
-.components {
-    img {
-        @media (min-width: 992px) {
-        max-width: 395px;
-        }
+.lightsoff { 
+  background: $theme-primary;
+  color: #fff;
+  position: relative;
+  @media (min-width: 992px) {
+    .back {
+      background: url(../img/lightsback.png) no-repeat bottom;
     }
-}
-.custom { 
+  }
+  p {
+    margin-bottom: 0px;
+  }
+  &.dime {
+    background: #30485B;
+  @media (min-width: 992px) {
+    .back {
+      background: url(../img/lightsback.png) no-repeat bottom;
+    }
+  }
+  }
+  @media (min-width: 992px) {
+        height: 100vh;
+    }
     img {
+        max-width: 880px;
         width: 100%;
-        @media (min-width: 992px) {
-        max-width: 442px;
-        }
+        max-height: 900px;
+        padding: 10px;
     }
     h2 {
       margin-bottom: 40px;
@@ -106,13 +121,59 @@ section {
       }
     }
 }
-.lightdark {
-    img {
-        width: 90%;
-        max-width: 1280px;
-        @media (max-width: 991px) {
-          margin-bottom: 64px;
-        }
+
+.video {
+  padding: 80px 0;
+    .macbook {
+      background: url(../img/macbook.png) no-repeat center;
+      background-size: 1200px;
+      width: 1200px;
+      height: 750px;
+      transition: all .4s ease-in-out;
+      margin: 0 auto;
+      @media (max-width: 991px) {
+        background-size: 900px;
+        width: 900px;
+        height: 600px;
+        margin: 0 auto;
+      }
+      @media (max-width: 767px) {
+        background-size: 600px;
+        width: 600px;
+        height: 500px;
+        margin: 0 auto;
+      }
+      @media (max-width: 575px) {
+        background-size: 360px;
+        width: 360px;
+        height: 300px;
+        margin: 0 auto;
+      }
+      &:hover {
+          background: url(../img/macbookhover.png) no-repeat center;
+          background-size: 1200px;
+          width: 1200px;
+          height: 750px;
+          margin: 0 auto;
+          @media (max-width: 991px) {
+            background-size: 900px;
+            width: 900px;
+            height: 600px;
+            margin: 0 auto;
+          }
+          @media (max-width: 767px) {
+            background-size: 600px;
+            width: 600px;
+            height: 500px;
+            margin: 0 auto;
+          }
+          @media (max-width: 575px) {
+            background-size: 360px;
+            width: 360px;
+            height: 300px;
+            margin: 0 auto;
+          }
+      }
     }
     h2 {
        @media (min-width: 992px) {
@@ -124,46 +185,36 @@ section {
     p {
       font-size: 32px;
       @media (min-width: 992px) {
-      margin-bottom: 100px;
+      margin-bottom: 10px;
       }
     }
 }
-.templates {
+.travel {
+  padding: 60px 0;
   background: $main-color;
   color: #ffffff;
-  .travelimg {
-      width: 80%;
-      max-width: 312px;
-      }
-  .btn {
-      color: $main-color;
-      padding: 24px 66px 24px 66px;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 38px;
-      line-height: 28px;
-      box-shadow: 0 0px 18px 0 rgba(10,64,105,0.43);
-      @media (min-width: 992px) {
-        margin-bottom: 48px;
-      }
-      @media (max-width: 991px) {
-          margin-bottom: 40px;
-          padding: 24px 0;
-          display: block;
-        }
-      img {
-        margin-right: 16px;
-      }
+  h2 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 60px;
+    img {
+      padding-bottom: 10px;
+      margin-right: 8px;
     }
+  }
+  p {
+      font-size: 24px;
+  }
 }
 .faq {
   p {
     font-size: 20px !important;
   }
   h2 {
+        padding: 30px 0 60px 0;
         font-weight: bold;
-        
         margin-bottom: 52px;
+        margin-top: 90px;
         @media (min-width: 992px) {
           font-size: 66px;
         }
@@ -173,10 +224,20 @@ section {
             }
          }
 }
-.components, .custom, .templates, .buyit {
-    @media (min-width: 992px) {
-        height: 100vh;
-    }
+.wireframes {
+  background: $main-color;
+  color: #fff;
+  .back {
+    background: url(../img/wire-back.png) no-repeat right;
+  }
+  h2 {
+    margin-bottom: 6px !important;
+  }
+  p {
+    margin: 56px 0;
+  }
+}
+.components, .lightsoff, .buyit, .wireframes {
     @media (max-width: 991px) {
       padding: 64px 0;
         .mobile {
@@ -193,30 +254,41 @@ section {
         @media (min-width: 992px) {
           font-size: 66px;
         }
-        @media (max-width: 991px) {
-            text-align: center;
-            margin-bottom: 40px;
-            }
          }
     p {
         font-size: 24px;
         @media (max-width: 991px) {
             text-align: left !important;
-            margin-bottom: 40px;
+            
          }
    }
-   @media (min-width: 992px) {
+    .comp {
+        height: 100%;
+    }
+}
+.buyit {
+  img {
+    width: 180px;
+    padding-bottom: 20px;
+  }
+  @media (min-width: 992px) {
+        height: 100vh;
         .row {
             height: -moz-available;          /* WebKit-based browsers will ignore this. */
             height: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
             height: fill-available;
         }
     }
-    .comp {
-        height: 100%;
+    h2 {
+      color: $main-color;
+      padding: 60px 0 10px 0;
+    }
+    p {
+      font-size: 16px;
     }
 }
 .buyit, .follow {
+
     .pricetable {
         padding: 24px;
         border-radius: 8px;
@@ -273,6 +345,11 @@ section {
         }
     }
 }
+
+a.mac {
+  width: 100%;
+  cursor: pointer;
+}
 @media (max-width: 991px) {
 
   .first h2 {
@@ -296,7 +373,6 @@ section {
     to { transform: translateY(0); }
   }
 }
-
 .gumroad-follow-form-embed { zoom: 1; } 
 .gumroad-follow-form-embed:before, .gumroad-follow-form-embed:after { display: table; line-height: 0; content: ""; } 
 .gumroad-follow-form-embed:after { clear: both; } 

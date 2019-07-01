@@ -1,7 +1,4 @@
 .masthead {
-    @media (min-width: 992px) {
-        height: 100vh;
-    }
     @media (max-width: 991px) {
         .mobile {
             order: 2;
@@ -11,6 +8,11 @@
         font-size: 32px;
         line-height: 38px;
         margin-bottom: 32px;
+        @media (max-width: 576px) {
+            font-size: 18px;
+            line-height: 25px;
+            margin-bottom: 60px;
+        }
     }
     h1 {
     font-weight: bolder;
@@ -39,13 +41,22 @@
             margin-bottom: 20px;
         }
     .btn-primary {
-        background-color: #0070FF;
-        border-color: #0070FF;
+        background-color: $main-color;
+        border-color: $main-color;
         }
     }
+    .btn-outline-primary {
+            box-shadow: 0 1px 6px 0 rgba(0,0,0,0.1);
+            border: 2px solid $main-color;
+            i {
+                font-size: 28px;
+                margin-right: 8px;
+            }
+        }
     .compatible {
-        @media (min-width: 992px) { 
-            margin-top: 56px;
+        margin-top: 56px;
+        @media (max-width: 991px) { 
+            margin: 56px 0;
         }
         color: #757575;
         font-size: 24px;
