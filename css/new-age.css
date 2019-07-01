@@ -3,7 +3,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  color: #000000;
+  color: #111111;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 }
 
 a {
-  color: #000000;
+  color: #111111;
 }
 
 hr {
@@ -86,105 +86,175 @@ section h2 {
   max-height: 670px;
 }
 
+.lightsoff {
+  background: #111111;
+  color: #fff;
+  position: relative;
+}
+
 @media (min-width: 992px) {
-  .components img {
-    max-width: 395px;
+  .lightsoff .back {
+    background: url(../img/lightsback.png) no-repeat bottom;
   }
 }
 
-.custom img {
+.lightsoff p {
+  margin-bottom: 0px;
+}
+
+.lightsoff.dime {
+  background: #30485B;
+}
+
+@media (min-width: 992px) {
+  .lightsoff.dime .back {
+    background: url(../img/lightsback.png) no-repeat bottom;
+  }
+}
+
+@media (min-width: 992px) {
+  .lightsoff {
+    height: 100vh;
+  }
+}
+
+.lightsoff img {
+  max-width: 880px;
   width: 100%;
+  max-height: 900px;
+  padding: 10px;
 }
 
-@media (min-width: 992px) {
-  .custom img {
-    max-width: 442px;
-  }
-}
-
-.custom h2 {
+.lightsoff h2 {
   margin-bottom: 40px;
 }
 
-.custom ul {
+.lightsoff ul {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 40px;
   text-align: left;
 }
 
-.custom ul li {
+.lightsoff ul li {
   line-height: 42px;
 }
 
-.lightdark img {
-  width: 90%;
-  max-width: 1280px;
+.video {
+  padding: 80px 0;
+}
+
+.video .macbook {
+  background: url(../img/macbook.png) no-repeat center;
+  background-size: 1200px;
+  width: 1200px;
+  height: 750px;
+  transition: all .4s ease-in-out;
+  margin: 0 auto;
 }
 
 @media (max-width: 991px) {
-  .lightdark img {
-    margin-bottom: 64px;
+  .video .macbook {
+    background-size: 900px;
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
   }
 }
 
-.lightdark h2 {
+@media (max-width: 767px) {
+  .video .macbook {
+    background-size: 600px;
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .video .macbook {
+    background-size: 360px;
+    width: 360px;
+    height: 300px;
+    margin: 0 auto;
+  }
+}
+
+.video .macbook:hover {
+  background: url(../img/macbookhover.png) no-repeat center;
+  background-size: 1200px;
+  width: 1200px;
+  height: 750px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .video .macbook:hover {
+    background-size: 900px;
+    width: 900px;
+    height: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .video .macbook:hover {
+    background-size: 600px;
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .video .macbook:hover {
+    background-size: 360px;
+    width: 360px;
+    height: 300px;
+    margin: 0 auto;
+  }
+}
+
+.video h2 {
   margin-bottom: 32px;
   font-weight: bold;
 }
 
 @media (min-width: 992px) {
-  .lightdark h2 {
+  .video h2 {
     font-size: 66px;
   }
 }
 
-.lightdark p {
+.video p {
   font-size: 32px;
 }
 
 @media (min-width: 992px) {
-  .lightdark p {
-    margin-bottom: 100px;
+  .video p {
+    margin-bottom: 10px;
   }
 }
 
-.templates {
+.travel {
+  padding: 60px 0;
   background: #0070FF;
   color: #ffffff;
 }
 
-.templates .travelimg {
-  width: 80%;
-  max-width: 312px;
-}
-
-.templates .btn {
-  color: #0070FF;
-  padding: 24px 66px 24px 66px;
-  border-radius: 8px;
+.travel h2 {
+  font-size: 40px;
   font-weight: bold;
-  font-size: 38px;
-  line-height: 28px;
-  box-shadow: 0 0px 18px 0 rgba(10, 64, 105, 0.43);
+  line-height: 60px;
 }
 
-@media (min-width: 992px) {
-  .templates .btn {
-    margin-bottom: 48px;
-  }
+.travel h2 img {
+  padding-bottom: 10px;
+  margin-right: 8px;
 }
 
-@media (max-width: 991px) {
-  .templates .btn {
-    margin-bottom: 40px;
-    padding: 24px 0;
-    display: block;
-  }
-}
-
-.templates .btn img {
-  margin-right: 16px;
+.travel p {
+  font-size: 24px;
 }
 
 .faq p {
@@ -192,8 +262,10 @@ section h2 {
 }
 
 .faq h2 {
+  padding: 30px 0 60px 0;
   font-weight: bold;
   margin-bottom: 52px;
+  margin-top: 90px;
 }
 
 @media (min-width: 992px) {
@@ -209,55 +281,70 @@ section h2 {
   }
 }
 
-@media (min-width: 992px) {
-  .components, .custom, .templates, .buyit {
-    height: 100vh;
-  }
+.wireframes {
+  background: #0070FF;
+  color: #fff;
+}
+
+.wireframes .back {
+  background: url(../img/wire-back.png) no-repeat right;
+}
+
+.wireframes h2 {
+  margin-bottom: 6px !important;
+}
+
+.wireframes p {
+  margin: 56px 0;
 }
 
 @media (max-width: 991px) {
-  .components, .custom, .templates, .buyit {
+  .components, .lightsoff, .buyit, .wireframes {
     padding: 64px 0;
   }
-  .components .mobile, .custom .mobile, .templates .mobile, .buyit .mobile {
+  .components .mobile, .lightsoff .mobile, .buyit .mobile, .wireframes .mobile {
     order: 2;
   }
-  .components div, .custom div, .templates div, .buyit div {
+  .components div, .lightsoff div, .buyit div, .wireframes div {
     text-align: center;
   }
 }
 
-.components h2, .custom h2, .templates h2, .buyit h2 {
+.components h2, .lightsoff h2, .buyit h2, .wireframes h2 {
   font-weight: bold;
   margin-bottom: 52px;
 }
 
 @media (min-width: 992px) {
-  .components h2, .custom h2, .templates h2, .buyit h2 {
+  .components h2, .lightsoff h2, .buyit h2, .wireframes h2 {
     font-size: 66px;
   }
 }
 
-@media (max-width: 991px) {
-  .components h2, .custom h2, .templates h2, .buyit h2 {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-}
-
-.components p, .custom p, .templates p, .buyit p {
+.components p, .lightsoff p, .buyit p, .wireframes p {
   font-size: 24px;
 }
 
 @media (max-width: 991px) {
-  .components p, .custom p, .templates p, .buyit p {
+  .components p, .lightsoff p, .buyit p, .wireframes p {
     text-align: left !important;
-    margin-bottom: 40px;
   }
 }
 
+.components .comp, .lightsoff .comp, .buyit .comp, .wireframes .comp {
+  height: 100%;
+}
+
+.buyit img {
+  width: 180px;
+  padding-bottom: 20px;
+}
+
 @media (min-width: 992px) {
-  .components .row, .custom .row, .templates .row, .buyit .row {
+  .buyit {
+    height: 100vh;
+  }
+  .buyit .row {
     height: -moz-available;
     /* WebKit-based browsers will ignore this. */
     height: -webkit-fill-available;
@@ -266,8 +353,13 @@ section h2 {
   }
 }
 
-.components .comp, .custom .comp, .templates .comp, .buyit .comp {
-  height: 100%;
+.buyit h2 {
+  color: #0070FF;
+  padding: 60px 0 10px 0;
+}
+
+.buyit p {
+  font-size: 16px;
 }
 
 .buyit .pricetable, .follow .pricetable {
@@ -337,6 +429,11 @@ section h2 {
   .buyit .pricetable, .follow .pricetable {
     margin: 24px;
   }
+}
+
+a.mac {
+  width: 100%;
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {
@@ -441,7 +538,7 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  color: #000000;
+  color: #111111;
   font-family: 'Calibri', 'Helvetica Neue', 'Arial', 'sans-serif';
 }
 
@@ -472,7 +569,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #000000 !important;
+  color: #111111 !important;
   background-color: transparent;
 }
 
@@ -529,7 +626,7 @@ section h2 {
   }
   #mainNav .navbar-nav > li > a,
   #mainNav .navbar-nav > li > a:focus {
-    color: #000000;
+    color: #111111;
   }
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.1);
@@ -539,7 +636,7 @@ section h2 {
     color: #222222;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-    color: #000000;
+    color: #111111;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
@@ -547,13 +644,7 @@ section h2 {
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-    color: #000000;
-  }
-}
-
-@media (min-width: 992px) {
-  .masthead {
-    height: 100vh;
+    color: #111111;
   }
 }
 
@@ -567,6 +658,14 @@ section h2 {
   font-size: 32px;
   line-height: 38px;
   margin-bottom: 32px;
+}
+
+@media (max-width: 576px) {
+  .masthead p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 60px;
+  }
 }
 
 .masthead h1 {
@@ -612,14 +711,25 @@ section h2 {
   border-color: #0070FF;
 }
 
+.masthead .btn-outline-primary {
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+  border: 2px solid #0070FF;
+}
+
+.masthead .btn-outline-primary i {
+  font-size: 28px;
+  margin-right: 8px;
+}
+
 .masthead .compatible {
+  margin-top: 56px;
   color: #757575;
   font-size: 24px;
 }
 
-@media (min-width: 992px) {
+@media (max-width: 991px) {
   .masthead .compatible {
-    margin-top: 56px;
+    margin: 56px 0;
   }
 }
 
@@ -639,7 +749,7 @@ section.download h2 {
   font-size: 48px;
   margin-top: 0;
   margin-bottom: 48px;
-  color: #000000;
+  color: #111111;
 }
 
 section.download h2 strong {
@@ -723,7 +833,7 @@ section.contact h2 {
   margin-top: 0px;
   margin-bottom: 24px;
   font-weight: 600;
-  color: #000000;
+  color: #111111;
 }
 
 section.contact p {
@@ -746,11 +856,11 @@ section.contact .people h3 {
 }
 
 section.contact .people a {
-  color: #000000;
+  color: #111111;
 }
 
 section.contact .people a:hover {
-  color: #000000;
+  color: #111111;
 }
 
 section.contact .reach h3 {
@@ -789,13 +899,13 @@ footer p {
   font-size: 14px;
   margin: 0;
   text-align: center;
-  color: #000000;
+  color: #111111;
 }
 
 footer h2 {
   font-weight: bold;
   text-align: center;
-  color: #000000;
+  color: #111111;
 }
 
 footer ul {
@@ -824,10 +934,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   background: #0070FF;
   background: -webkit-linear-gradient(#0070FF, #0065e6);
   background: linear-gradient(#0070FF, #0065e6);
+  background-color: #0070FF;
+  border-color: #0070FF;
 }
 
 .text-primary {
-  color: #000000;
+  color: #111111;
 }
 
 .no-gutter > [class*='col-'] {
@@ -852,6 +964,37 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   color: white;
   border-color: #0070FF;
   background-color: #0070FF;
+}
+
+.modal {
+  background: #000;
+}
+
+.modal-dialog {
+  max-width: 100%;
+  background: transparent;
+  border: 0px solid transparent;
+}
+
+.modal-content {
+  height: 95vh;
+  width: 90vw;
+  margin: 0 auto;
+  background: transparent;
+  border: 0px solid transparent;
+}
+
+.modal-header {
+  border: 0px solid transparent;
+}
+
+button.close {
+  position: fixed;
+  top: 8px;
+  right: 24px;
+  background: #fff;
+  border-radius: 50%;
+  width: 56px;
 }
 
 .btn {
