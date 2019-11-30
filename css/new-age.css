@@ -181,27 +181,6 @@ section h2 {
   }
 }
 
-.travel {
-  padding: 60px 0;
-  background: #0070FF;
-  color: #ffffff;
-}
-
-.travel h2 {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 60px;
-}
-
-.travel h2 img {
-  padding-bottom: 10px;
-  margin-right: 8px;
-}
-
-.travel p {
-  font-size: 24px;
-}
-
 .faq p {
   font-size: 20px !important;
 }
