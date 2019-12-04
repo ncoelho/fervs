@@ -1,39 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="30px" height="27px" viewBox="0 0 30 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
     <title>sketch</title>
     <desc>Created with Sketch.</desc>
-    <g id="website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.404087612">
-        <g id="Product-Copy" transform="translate(-166.000000, -685.000000)">
-            <g id="Group-14">
-                <g id="header">
-                    <g id="Group-2" transform="translate(166.000000, 677.000000)">
-                        <g id="Group-13" transform="translate(0.000000, -0.000000)">
-                            <g id="sketch" transform="translate(0.000000, 8.000000)">
-                                <g id="Base" fill="#FFAE00">
-                                    <polygon id="Polygon" transform="translate(15.000000, 13.524590) rotate(-180.000000) translate(-15.000000, -13.524590) " points="15 3.43974919e-15 30 17.3671471 23.5020243 26.1414897 15 27.0491803 6.49797571 26.1414897 -2.30825705e-13 17.3671471"></polygon>
-                                </g>
-                                <g id="Bottom-Back" transform="translate(0.000000, 9.836066)" fill="#EC6C00">
-                                    <polygon id="Polygon" transform="translate(15.000000, 8.606557) rotate(-180.000000) translate(-15.000000, -8.606557) " points="15 6.81848287e-15 30 17.2131148 -3.45202949e-15 17.2131148"></polygon>
-                                </g>
-                                <g id="Bottom-Mid" transform="translate(6.393443, 9.836066)" fill="#FFAE00">
-                                    <polygon id="Polygon" transform="translate(8.852459, 8.606557) rotate(-180.000000) translate(-8.852459, -8.606557) " points="8.85245902 0 17.704918 17.2131148 2.30796832e-13 17.2131148"></polygon>
-                                </g>
-                                <g id="Top-Mid" transform="translate(6.393443, 0.000000)" fill="#FFEFB4">
-                                    <polygon id="Polygon" transform="translate(8.852459, 4.918033) rotate(-180.000000) translate(-8.852459, -4.918033) " points="8.85245902 9.83606557 17.704918 1.66588055e-13 3.42315671e-15 -3.49447247e-15"></polygon>
-                                </g>
-                                <g id="Top-Side-Left" transform="translate(0.000000, 0.983607)" fill="#FFAE00">
-                                    <polygon id="Polygon" transform="translate(3.196721, 4.426230) rotate(-180.000000) translate(-3.196721, -4.426230) " points="-2.27373675e-13 8.85245902 3.28634901 4.39570379 6.39344262 1.66577888e-13 0.358510801 3.47037266e-15"></polygon>
-                                </g>
-                                <g id="Top-Side-Right" transform="translate(26.803279, 5.409836) scale(-1, 1) translate(-26.803279, -5.409836) translate(23.606557, 0.983607)" fill="#FFAE00">
-                                    <polygon id="Polygon" transform="translate(3.196721, 4.426230) rotate(-180.000000) translate(-3.196721, -4.426230) " points="-2.27373675e-13 8.85245902 3.28634901 4.39570379 6.39344262 1.66577888e-13 0.358510801 3.47037266e-15"></polygon>
-                                </g>
-                                <g id="Top-Left" transform="translate(5.901639, 0.000000)" fill="#FED305">
-                                    <polygon id="Polygon" transform="translate(4.426230, 4.918033) rotate(-180.000000) translate(-4.426230, -4.918033) " points="8.43091335 8.91393443 8.85245902 2.95585778e-12 2.27373675e-13 9.83606557"></polygon>
-                                </g>
-                                <g id="Top-Right" transform="translate(15.245902, 0.000000)" fill="#FED305">
-                                    <polygon id="Polygon" transform="translate(4.426230, 4.918033) scale(-1, 1) rotate(-180.000000) translate(-4.426230, -4.918033) " points="8.43091335 8.91393443 8.85245902 0 -8.55789177e-16 9.83606557"></polygon>
-                                </g>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Product-Copy-2" transform="translate(-250.000000, -686.000000)">
+            <g id="header">
+                <g id="Group-2" transform="translate(162.000000, 635.000000)">
+                    <g id="Group-13" transform="translate(88.000000, 43.000000)">
+                        <g id="sketch" transform="translate(0.000000, 8.000000)">
+                            <g id="Base" fill="#FFAE00">
+                                <polygon id="Polygon" transform="translate(15.000000, 13.524590) rotate(-180.000000) translate(-15.000000, -13.524590) " points="15 3.43974919e-15 30 17.3671471 23.5020243 26.1414897 15 27.0491803 6.49797571 26.1414897 -2.30825705e-13 17.3671471"></polygon>
+                            </g>
+                            <g id="Bottom-Back" transform="translate(0.000000, 9.836066)" fill="#EC6C00">
+                                <polygon id="Polygon" transform="translate(15.000000, 8.606557) rotate(-180.000000) translate(-15.000000, -8.606557) " points="15 6.81848287e-15 30 17.2131148 -3.45202949e-15 17.2131148"></polygon>
+                            </g>
+                            <g id="Bottom-Mid" transform="translate(6.393443, 9.836066)" fill="#FFAE00">
+                                <polygon id="Polygon" transform="translate(8.852459, 8.606557) rotate(-180.000000) translate(-8.852459, -8.606557) " points="8.85245902 0 17.704918 17.2131148 2.30796832e-13 17.2131148"></polygon>
+                            </g>
+                            <g id="Top-Mid" transform="translate(6.393443, 0.000000)" fill="#FFEFB4">
+                                <polygon id="Polygon" transform="translate(8.852459, 4.918033) rotate(-180.000000) translate(-8.852459, -4.918033) " points="8.85245902 9.83606557 17.704918 1.66588055e-13 3.42315671e-15 -3.49447247e-15"></polygon>
+                            </g>
+                            <g id="Top-Side-Left" transform="translate(0.000000, 0.983607)" fill="#FFAE00">
+                                <polygon id="Polygon" transform="translate(3.196721, 4.426230) rotate(-180.000000) translate(-3.196721, -4.426230) " points="-2.27373675e-13 8.85245902 3.28634901 4.39570379 6.39344262 1.66577888e-13 0.358510801 3.47037266e-15"></polygon>
+                            </g>
+                            <g id="Top-Side-Right" transform="translate(26.803279, 5.409836) scale(-1, 1) translate(-26.803279, -5.409836) translate(23.606557, 0.983607)" fill="#FFAE00">
+                                <polygon id="Polygon" transform="translate(3.196721, 4.426230) rotate(-180.000000) translate(-3.196721, -4.426230) " points="-2.27373675e-13 8.85245902 3.28634901 4.39570379 6.39344262 1.66577888e-13 0.358510801 3.47037266e-15"></polygon>
+                            </g>
+                            <g id="Top-Left" transform="translate(5.901639, 0.000000)" fill="#FED305">
+                                <polygon id="Polygon" transform="translate(4.426230, 4.918033) rotate(-180.000000) translate(-4.426230, -4.918033) " points="8.43091335 8.91393443 8.85245902 2.95585778e-12 2.27373675e-13 9.83606557"></polygon>
+                            </g>
+                            <g id="Top-Right" transform="translate(15.245902, 0.000000)" fill="#FED305">
+                                <polygon id="Polygon" transform="translate(4.426230, 4.918033) scale(-1, 1) rotate(-180.000000) translate(-4.426230, -4.918033) " points="8.43091335 8.91393443 8.85245902 0 -8.55789177e-16 9.83606557"></polygon>
                             </g>
                         </g>
                     </g>
