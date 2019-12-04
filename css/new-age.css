@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html,
 body {
   width: 100%;
@@ -432,6 +431,27 @@ section h2 {
   }
 }
 
+.video .props .this {
+  padding: 50px 16px;
+}
+
+@media (max-width: 991px) {
+  .video .props .this {
+    padding: 40px 16px 0 16px;
+  }
+}
+
+.video .props h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.video .props p {
+  font-size: 16px;
+  font-weight: 200;
+}
+
 .faq p {
   font-size: 20px !important;
 }
@@ -483,12 +503,6 @@ section h2 {
   font-size: 24px;
 }
 
-@media (max-width: 991px) {
-  .components p, .buyit p {
-    text-align: left !important;
-  }
-}
-
 .components .comp, .buyit .comp {
   height: 100%;
 }
@@ -512,8 +526,7 @@ section h2 {
 }
 
 .buyit h2 {
-  color: #0070FF;
-  padding: 60px 0 10px 0;
+  padding: 10px 0 40px 0;
 }
 
 .buyit p {
@@ -533,7 +546,7 @@ section h2 {
 
 @media (min-width: 992px) {
   .buyit .pricetable:hover, .follow .pricetable:hover {
-    transform: scale(0.96);
+    transform: scale(0.99);
   }
 }
 
@@ -551,21 +564,16 @@ section h2 {
   list-style: none;
 }
 
-.buyit .pricetable ul li:before, .follow .pricetable ul li:before {
-  content: '✔ ';
-  color: #0070FF;
-}
-
-.buyit .pricetable ul li.no:before, .follow .pricetable ul li.no:before {
-  content: '✖ ';
-  color: #777777;
-}
-
 .buyit .pricetable h3, .follow .pricetable h3 {
-  font-weight: bold;
-  font-size: 30px;
-  color: #0070FF;
-  margin: 24px 0 0 0;
+  font-weight: 400;
+  display: inline-block;
+  border-radius: 80px;
+  padding: 0px 0px;
+}
+
+.buyit .pricetable h3 img, .follow .pricetable h3 img {
+  width: 30px;
+  margin-top: 14px;
 }
 
 .buyit .pricetable h4, .follow .pricetable h4 {
@@ -577,12 +585,13 @@ section h2 {
   font-size: 30px;
   margin-bottom: 32px;
   display: block;
+  font-family: helvetica;
 }
 
 .buyit .pricetable .btn, .follow .pricetable .btn {
   padding: 16px 24px 16px 24px;
   border-radius: 4px;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.28);
@@ -590,7 +599,7 @@ section h2 {
 
 @media (max-width: 991px) {
   .buyit .pricetable, .follow .pricetable {
-    margin: 24px;
+    margin: 24px 0;
   }
 }
 

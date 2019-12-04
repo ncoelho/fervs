@@ -385,6 +385,23 @@ section {
       font-size: 18px;
     }
   }
+  .props {
+    .this {
+      padding: 50px 16px;
+      @media (max-width: 991px) {
+        padding: 40px 16px 0 16px;
+      }
+    }
+    h4 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 16px 0;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 200;
+    }
+  }
 }
 .faq {
   p {
@@ -426,7 +443,7 @@ section {
     p {
         font-size: 24px;
         @media (max-width: 991px) {
-            text-align: left !important;
+            
             
          }
    }
@@ -448,8 +465,7 @@ section {
         }
     }
     h2 {
-      color: $main-color;
-      padding: 60px 0 10px 0;
+      padding: 10px 0 40px 0;
     }
     p {
       font-size: 16px;
@@ -466,7 +482,7 @@ section {
         &:hover {
             box-shadow: 0 1px 20px 11px rgba(13,45,75,0.1);
             @media (min-width: 992px) {
-            transform: scale(0.96);
+            transform: scale(0.99);
           }
         }
         small {
@@ -480,19 +496,15 @@ section {
           text-align: left;
           list-style: none;
         }
-        ul li:before {
-          content: '✔ ';
-          color: $main-color;
-        }
-        ul li.no:before {
-          content: '✖ ';
-          color: $gray-light;
-        }
         h3 {
-            font-weight: bold;
-            font-size: 30px;
-            color: $main-color;
-            margin: 24px 0 0 0;
+          font-weight: 400;
+          display: inline-block;
+          border-radius: 80px;
+          padding: 0px 0px;
+            img {
+              width: 30px;
+              margin-top: 14px;
+            }
         }
         h4 {
           margin-bottom: 24px;  
@@ -502,17 +514,18 @@ section {
             font-size: 30px;
             margin-bottom: 32px;
             display: block;
+            font-family: helvetica;
         }
         .btn {
             padding: 16px 24px 16px 24px;
             border-radius: 4px;
-            font-weight: bold;
+            font-weight: 400;
             font-size: 24px;
             line-height: 28px;
             box-shadow: 0 1px 6px 0 rgba(0,0,0,0.28);
         }
         @media (max-width: 991px) {
-            margin: 24px;
+            margin: 24px 0;
         }
     }
 }
